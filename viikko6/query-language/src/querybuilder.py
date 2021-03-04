@@ -18,7 +18,7 @@ class QueryBuilder():
         return self
     
     def oneOf(self, q1,q2):
-        self.queries = Or(And(q1),And(q2))
+        self.queries = Or(q1,q2)
         self.change = True
         return self
     
